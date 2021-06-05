@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.header {
+  width: 100vw;
+}
+
+.nav {
+  background-color: #79B4A9;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Righteous", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: opacity 0.4s ease;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.menu-container {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header__link {
+  word-wrap: break-word;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  margin-right: 60px;
+  transition: opacity 0.4s ease;
+}
+
+.header__link:hover {
+  opacity: 0.6;
+}
+
+.duck__container {
+  margin: 100px auto 100px auto;
+  max-width: 500px;
+  text-align: center;
+  border: 10px solid teal;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.duck__name {
+  font-family: "Righteous", sans-serif;
+  font-size: 50px;
+}
+
+.duck__description {
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.sighting {
+  background-color: rgb(233, 163, 92); /*#676F54*/ 
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.sighting__title {
+  font-family: "Righteous";
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.sighting__gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.sighting__unit {
+  margin-right: 40px;
+  width: 30%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sighting__unit:last-child {
+  margin-right: 0;
+}
+
+.sighting__image {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  margin-bottom: 32px;
+}
+
+.sighting__description {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+
+.form-group {
+  margin: 100px auto 120px auto;
+  width: 60%;
+  max-width: 780px;
+  font-family: "Raleway", sans-serif;
+}
+
+.form-group__title {
+  font-family: "Righteous";
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fieldset {
+  border: none;
+  margin-bottom: 30px;
+  width: 30%;
+  max-width: 389px;
+}
+
+.form__label {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form__item {
+  padding-left: 10px;
+  display: block;
+  height: 50px;
+  width: 389px;
+  margin-top: 14px;
+  background-color: #F2F2F2;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form__item_type_location {
+  padding: 15px;
+  height: 138px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons__item:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.buttons__item_type_reset {
+  margin-right: 32px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+.buttons__item_type_reset:hover {
+  color:rgb(233, 163, 92);
+}
+
+.buttons__item_type_submit {
+  cursor: pointer;
+  width: 148px;
+  height: 50px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s ease;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .logo {
+    margin-left: 10px;
+  }
+  .menu-container {
+    flex-basis: 65%;
+  }
+
+  header__link {
+    font-size: 15px;
+  }
+  
+  .sighting__gallery {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .sighting__unit {
+    margin-bottom: 25px; 
+    margin-right: 0;
+    min-width: 350px;
+  }
+
+  .sighting__image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+}

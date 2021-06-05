@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dancing Ducks</title>
+	<link href="styles/normalize.css" rel="stylesheet" type="text/css" />
+	<link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="page">
+
+	<header class="header">
+		<div class="nav">
+			<a class="logo" href="./index.html">DancingDucks</a>
+			<div class="menu-container">
+				<nav class="menu">
+					<a class="header__link" href="#about">About Us</a>
+          <a class="header__link" href="#sighting">Find a Duck</a>
+					<a class="header__link" href="#form">Hire for the Evening</a>
+        </nav>
+      </div>
+      </div>
+<section class="duck__container" id="about">
+      <h1 class="duck__name ">Exotic Duck Dancers for Any Occasion</h1>
+      <img src="images/zebraduck.png ">
+      <p class="duck__description ">These luscious and exotic ducks are passionate dancers, and eager to perform for your bachelor party, corporate event, or family member's birthdays. Enjoy an unforgettable evening with any of our gorgeous duck dancers.</p>
+<section>
+    </header>
+
+    <section class="sighting" id="sighting">
+      <h2 class="sighting__title">Our Most Beautiful Ducks</h2>
+      <div class="sighting__gallery ">
+        <div class="sighting__unit ">
+          <img class="sighting__image " src="./images/duck-image-1.jpg " alt="ducky " />
+          <p class="sighting__description ">Candy and the girls</p>
+        </div>
+        <div class="sighting__unit ">
+          <img class="sighting__image " src="./images/duck-image-2.jpg " alt="ducky " />
+          <p class="sighting__description ">Madison, out for a wild night</p>
+        </div>
+        <div class="sighting__unit ">
+          <img class="sighting__image " src="./images/duck-image-4.jpg " alt="ducky " />
+          <p class="sighting__description ">Angee, waiting for you</p>
+        </div>
+      </div>
+    </section>
+
+  <section class="form-group">
+    <h2 class="form-group__title" id="form">Hire a Duck for your Event</h2>
+    <form class="form">
+
+        <fieldset class="fieldset name">
+          <label class= "form__label form__label_type_name" for="name">Your Name</label>
+            <input class="form__item form__item_type_name" type="text" id="name" name="name" placeholder="Full Name" required>
+        </fieldset>
+
+        <fieldset class="fieldset email">
+          <label class="form__label form__label_type_email" for="description">Your Email</label>
+            <input class="form__item form__item_type_email" type="email" id="email" name="email" placeholder="Email Address" required></input>
+        </fieldset>
+
+        <fieldset class="fieldset location">
+            <label class="form__label form__label_type_location" for="location">Tell us your about your duck preference</label>
+            <textarea class="form__item form__item_type_location" id="location" name="description" style="resize: none;" placeholder="Webbed feet, shiny bill, etc" required></textarea>
+        </fieldset>
+
+
+        <fieldset class="fieldset buttons">
+            <label class="buttons__label buttons_label_type_reset" for="reset"></label>
+            <input class="buttons__item buttons__item_type_reset" type="reset" id="reset" name="reset" placeholder="reset">
+
+            <label class="buttons__label buttons_label_type_submit" for="submit"></label>
+            <button class="buttons__item buttons__item_type_submit" type="submit" id="submit" name="submit" placeholder="Submit">Submit</button>
+        </fieldset>
+
+    </form>
+
+
+  </section>   
+    <script src="script.js"></script>
+  </body>
+
+</html>
